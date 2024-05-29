@@ -1,6 +1,9 @@
+package romain;
+
 public class Voiture {
     public String marque;
     public int prix;
+
 
     public Voiture(String marque,int prix){
         this.marque= marque;
