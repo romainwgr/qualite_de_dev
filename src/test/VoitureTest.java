@@ -10,6 +10,8 @@ public class VoitureTest {
         assertEquals("Je suis une Voiture Renault et je coûte 20000",
                 v1.toString()
                 );
+        assertEquals("Renault", v1.getMarque());
+        assertEquals(20000, v1.getPrix());
     }
     public static void main(String[] args) {
         testToString();

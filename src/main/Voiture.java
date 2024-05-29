@@ -9,12 +9,12 @@ public class Voiture {
     public Voiture(){}
 
 
-    public void getMarque(String marque) {
-        this.marque = marque;
+    public String getMarque() {
+        return this.marque;
     }
 
-    public void getPrix(int prix) {
-        this.prix = prix;
+    public int getPrix() {
+        return this.prix;
     }
     public void setMarque(String marque){
         this.marque = marque;
