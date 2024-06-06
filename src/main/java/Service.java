@@ -1,6 +1,5 @@
-package romain;
+package java.romain;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Service implements Statistique {

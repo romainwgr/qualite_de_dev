@@ -1,12 +1,19 @@
-package romain;
+package java.romain;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import java.romain.Voiture;
 
 public class VoitureTest {
 
+    Voiture v1;
+
+    @BeforeEach
+    void setUp() {
+        v1 = new Voiture();
+    }
     @Test
     public static void testToString(){
         Voiture v1 = new Voiture("Renault",20000);

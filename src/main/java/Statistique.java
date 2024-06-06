@@ -1,4 +1,4 @@
-package romain;
+package java.romain;
 
 public interface Statistique {
 
