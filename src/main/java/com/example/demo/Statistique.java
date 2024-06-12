@@ -1,4 +1,4 @@
-package java.romain;
+package java.com.example.demo;
 
 public interface Statistique {
 
