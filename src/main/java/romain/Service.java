@@ -1,4 +1,4 @@
-package java.com.example.demo;
+package romain;
 
 import java.util.*;
 import java.lang.*;
@@ -17,7 +17,7 @@ public class Service implements Statistique {
 
     @Override
     public int prix() throws ArithmeticException {
-        if (voitures.size() == 0) {
+        if (voitures.isEmpty()) {
             throw new ArithmeticException();
         }
 
@@ -26,7 +26,7 @@ public class Service implements Statistique {
                 for (int j = i - 5; j < i; j++) {
                     Voiture voiture_a_remise = voitures.get(j);
                     int prix = voiture_a_remise.getPrix();
-                    double remise = prix * 0.95;
+                    double remise = prix * 0.05;
                     if (remise > 20000) {
                         remise = 20000;
                     }

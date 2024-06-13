@@ -1,12 +1,10 @@
-package java.romain;
+package romain;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.com.example.demo.Voiture;
-
-        public class VoitureTest {
+public class VoitureTest {
 
             Voiture v1;
 
@@ -33,11 +31,12 @@ import java.com.example.demo.Voiture;
                 v1.setMarque("Ferrari");
                 Assertions.assertEquals(v1.getMarque(),"Ferrari");
             }
+
             @Test
 
 
 
-    public void main(String[] args) {
+    public void main() {
         testToString();
     }
 }
