@@ -10,4 +10,5 @@ import org.junit.platform.suite.api.SuiteDisplayName;
 @SelectPackages("romain")
 @IncludeClassNamePatterns(".*Test")
 public class SuiteTest {
+
 }
