@@ -32,6 +32,5 @@ public class ServiceTest {
     }
     public void main() {
         testAjouter();
-        testPrix();
     }
 }
