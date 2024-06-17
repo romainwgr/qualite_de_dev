@@ -30,5 +30,8 @@ public class ServiceTest {
         int dernierPrix = s1.prix();
         Assertions.assertTrue(dernierPrix <= 20000, "Le prix après remise doit être inférieur ou égal à 20000");
     }
-
+    public void main() {
+        testAjouter();
+        testPrix();
+    }
 }

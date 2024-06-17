@@ -38,5 +38,7 @@ public class VoitureTest {
 
     public void main() {
         testToString();
+        testGetPrix();
+        testGetMarque();
     }
 }
