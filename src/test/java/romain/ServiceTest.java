@@ -25,12 +25,7 @@ public class ServiceTest {
         s1.ajouter(new Voiture("Lamborghini", 20000));
         s1.ajouter(new Voiture("BMW", 25000));
         s1.ajouter(new Voiture("Mercedes", 5000000));
-
-        // Cela devrait appliquer une remise aux 5 premières voitures
         int dernierPrix = s1.prix();
         Assertions.assertTrue(dernierPrix <= 20000, "Le prix après remise doit être inférieur ou égal à 20000");
-    }
-    public void main() {
-        testAjouter();
     }
 }

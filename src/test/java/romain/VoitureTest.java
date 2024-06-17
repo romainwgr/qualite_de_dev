@@ -32,13 +32,6 @@ public class VoitureTest {
                 Assertions.assertEquals(v1.getMarque(),"Ferrari");
             }
 
-            @Test
 
 
-
-    public void main() {
-        testToString();
-        testGetPrix();
-        testGetMarque();
-    }
 }
