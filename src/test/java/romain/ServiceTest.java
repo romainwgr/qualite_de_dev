@@ -34,5 +34,19 @@ public class ServiceTest {
         // Vérifier le dernier prix (celui de la Mercedes)
         Assertions.assertEquals(expectedPriceMercedes, dernierPrix, "Le prix de la dernière voiture doit être de 4980000");
     }
+    @Test
+    public void testPrixIfNul() {
+        Service s1 = new Service();
+        ArithmeticException thrown = Assertions.assertThrows(ArithmeticException.class, s1::prix, "La liste des voitures est vide");
+        Assertions.assertEquals("La liste des voitures est vide", thrown.getMessage());
+    }
+
+    @Test
+    public void testPrixIfInferieurA5() {
+        Service s1 = new Service();
+        s1.ajouter(new Voiture("Renault", 10000));
+        int dernierPrix = s1.prix();
+        Assertions.assertEquals(10000, dernierPrix, "Le prix de la voiture doit rester inchangé à 10000");
+    }
 
 }
