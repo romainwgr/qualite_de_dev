@@ -15,6 +15,10 @@ public class Service implements Statistique {
         voitures.add(voiture);
     }
 
+
+    public List<Voiture> getVoitures() {
+        return voitures;
+    }
     @Override
     public int prix() throws ArithmeticException {
         if (voitures.isEmpty()) {
