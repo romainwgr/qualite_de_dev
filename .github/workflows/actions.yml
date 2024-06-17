@@ -15,7 +15,7 @@ jobs:
       - name: Build test and build docker image
         run: |
           export SHELL=/bin/bash
-          ./gradlew build
+          ./gradlew test
       - name: Generate JaCoCo Badge
         uses: cicirello/jacoco-badge-generator@v2
         with:
